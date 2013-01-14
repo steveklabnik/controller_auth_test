@@ -53,6 +53,7 @@ class PrivatePostsControllerTest < ActionController::TestCase
 
   setup do
     @post = posts(:two)
+    request.env['HTTP_AUTHORIZATION'] = ActionController::HttpAuthentication::Basic.encode_credentials("foo","bar")
   end
 
   test "should get index" do
