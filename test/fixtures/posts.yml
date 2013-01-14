@@ -6,6 +6,6 @@ one:
   private: false
 
 two:
-  title: MyString
+  title: Private Post
   body: MyText
-  private: false
+  private: true
